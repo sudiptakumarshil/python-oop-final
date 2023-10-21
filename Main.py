@@ -153,8 +153,8 @@ def main():
         if command == 12:
             if logged_in_admin is not None:
                 account_number = input('Enter an account_number to delete: ')
-                User.delete_user(account_number)
-                Account.delete_account(account_number)
+                print(User.delete_user(account_number))
+                print(Account.delete_account(account_number))
             else:
                 print('Please Login First')
 
